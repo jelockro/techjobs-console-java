@@ -134,7 +134,7 @@ public class JobData {
         for (HashMap<String, String> row : allJobs) {
             for (String key : row.keySet()) {
                 String theValue = row.get(key);
-                if (Arrays.asList(theValue.toLowerCase().split(" ")).contains(field.toLowerCase())) {
+                if (theValue.toLowerCase().contains(field.toLowerCase())) {
 //                    System.out.println(theValue);
                     jobs.add(row);
                 }
